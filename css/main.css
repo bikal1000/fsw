@@ -1,0 +1,637 @@
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+ul,
+li,
+a,
+section,
+form,
+table,
+td,
+tr,
+tbody,
+select,
+label,
+figure {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --dark-blue: #0D82BF;
+    --purple: #730195;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 31px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+a{
+    color:inherit;
+}
+
+ul>li,
+li {
+    list-style: none;
+}
+
+label {
+    margin-bottom: .5rem;
+}
+
+.wholepage {
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    min-height: 100%;
+}
+/*HEADER SECTION */
+#header li a{
+    color:#000;
+}
+#header{
+    padding-bottom: 76px;
+}
+#header nav{
+    background: #fff;
+   box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.5);
+}
+.main-logo{
+    height: 50px;
+}
+
+/*HOME BANNER SECTION*/
+.home-bg-img{
+
+}
+.home-bg-img img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: top;
+}
+.home-banner-section{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.home-banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-bg-img:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: rgba(255,255,255,0.5);
+}
+.we-are-flower-title{
+    width: 650px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.adtech-title{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/*client section*/
+.client-logo{
+    max-height: 35px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.client-logo img{
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.client-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.client-slider .slick-slider{
+    position: relative;
+}
+.client-slider{
+    padding: 40px 0;
+}
+.client-slider .slick-slider .leftArrowSlick,
+.client-slider .slick-slider .rightArrowSlick  {
+    position: absolute;
+    z-index: 99;
+     width: 50px;
+    height: 50px;
+    display: flex;
+    color: #777;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #777;
+}
+.client-slider .slick-slider .leftArrowSlick{
+    left: -50px;
+    top: -13px;
+
+}
+.client-slider .slick-slider .rightArrowSlick{
+   right: -68px;
+    top: -15px;
+}
+.our-partner-section{
+    background: #F2F2F2;
+    padding-top: 30px;
+}
+/*CANNABIS ADVERT SECTION*/
+.cannabis-advert-section{
+    padding: 50px 0;
+    background: #F2F2F2;
+    margin-bottom: 50px;
+}
+.advert-content-section{
+    padding-top: 80px;
+}
+.cannabis-ad-title{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.advert-content-section p{
+    padding-bottom: 30px;
+}
+.selfbtn{
+    display: inline-block;
+    z-index: 41;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.blue-btn{
+    box-shadow: inset 0 0 0 40px var(--dark-blue);
+     border: transparent;
+     background: #fff;
+     transition: 0.3s all;
+}
+.blue-btn:hover{
+    box-shadow: inset 0 0 0 2px var(--dark-blue);
+    background: #fff;
+    color: var(--dark-blue);
+}
+/************************/
+.changing-right-content h3{
+    padding-bottom:15px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.changing-right-content h3 a, .changing-right-content h3{
+    color: #212529;
+    transition: all 0.3s;
+}
+.changing-right-content h3 a:hover, .changing-right-content h3:hover{
+    color: var(--dark-blue);
+}
+.changing-img img{
+    width: 100%;
+}
+.changing-column-section .row:nth-child(even){
+    flex-direction: row-reverse;
+}
+.changing-column-section .row{
+    margin-bottom: 50px;
+    align-items: center;
+}
+.change-image-fig{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.change-image-fig img{
+    position: absolute;
+}
+.change-image-fig img:nth-child(1){
+    z-index: 99;
+    left: 116px;
+}
+.change-image-fig img:nth-child(2){
+   top: 50px;
+    right: 10px;
+    z-index: 99;
+}
+.change-image-fig img:nth-child(3){
+   position: relative;
+    left: 0;
+    top: 0;
+    
+}
+.three-dot-section{
+    padding-top: 80px;
+    background: #eee;
+}
+.three-dot-section h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.three-dot-content p{
+    max-width: 750px;
+}
+.three-dot-content{
+    padding-bottom: 55px;
+}
+.blue-circle-sec{
+    text-align: center;
+    background:  #5989b9;
+    color: #fff;
+    font-weight: 600;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+.blue-dots-section h3{
+    color: #5989b9;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    padding:10px 0;
+}
+.blue-dots-section p{
+    text-align: center;
+     color: #5989b9;
+}
+.three-dot-part .row > div:nth-child(1) .blue-circle-sec:after{
+    content: "";
+    width: 715px;
+    height: 2px;
+    background: #5989b9;
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 45px;
+    border-top: dashed;
+}
+.three-dot-part{
+    padding-bottom: 80px;
+}
+.capability-tab-section{
+    padding-top: 60px;
+}
+.capability-content h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.capability-content p{
+    padding-bottom: 50px;
+}
+.mytab_btn {
+    display: block;
+    box-shadow: 0 0 18px 0px #888888;
+    width: 250px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.mytab_btn li a{
+    text-transform: capitalize;
+}
+.mytab_btn li{
+    margin:10px 0;
+}
+.mytab_btn li.active a{
+    background: var(--purple);
+    color: #fff;
+}
+.mytab_btn li a{
+    background:#F4F4F4;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #000;
+    border-radius: 5px;
+}
+.list-title{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    display: block;
+    color: #212529;
+}
+.list-content-sec:hover .list-title, .list-title:focus{
+    color: var(--dark-blue);
+}
+.list-content-sec{
+    margin-bottom: 30px;
+    display: block;
+    cursor: pointer;
+}
+.tab-contents{
+    padding-bottom: 50px;
+}
+.publisher-email-section{
+    background: url('../images/cannabis_email.png') no-repeat;
+    background-size: cover;
+}
+.publisher-email-content{
+    padding: 100px 0;
+}
+.publisher-email-content h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 45px;
+}
+.publisher-email-content input[type="email"]{
+    max-width: 550px;
+    width: 100%;
+    padding: 10px;
+    background:#000;
+    border: transparent;
+    color: #fff;
+    margin-right: 40px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+#footer{
+    padding: 50px 0;
+    background:#595959;
+}
+.footer-title{
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    display: block;
+    color: #fff;
+    text-transform:uppercase;
+}
+#footer li a,
+#footer li{
+    color:#777;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+#footer .row > div:nth-child(1) .footer-ul{
+    column-count: 2;
+}
+
+/* Capabilities chnages */
+.aling-center-flex{
+    align-items: center;
+    display: flex;
+}
+.selftabe-content{
+    position: relative;
+    max-width: 510px;
+    width: 510px;
+    margin-left: auto;
+    position: relative; 
+    padding-bottom: 45%;  
+}
+.selfpill__content, .selfpill__content img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.selfpill__content img{
+    object-fit: contain;
+}
+.selfpill__content{
+    z-index: 1;
+    left: -140px;
+    transition: all 0.3s;
+}
+.selfpill__content.active, .selfpill__content+.selfpill__content.active{
+    z-index: 99;
+    left: 0;
+}
+.selfpill__content.active+.selfpill__content, .selfpill__content+.selfpill__content{
+    z-index: 9;
+    left: -80px;
+}
+.selfpill__content.active+.selfpill__content+.selfpill__content{
+    left: -140px;
+    z-index: 1;
+}
+.advert-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    object-position: top center;
+}
+.changing-right-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.changing-column-section .container{
+    background: transparent url('../images/main__bk.png') repeat scroll 0 center / 100% auto;
+}
+.changing-right-content{
+    flex: 0 0 calc(100% - 215px);
+    width: calc(100% - 215px);
+}
+.changing-column-row + .changing-column-row{
+    margin-top: 150px;
+}
+.changing-right-section figure{
+    width: 200px;
+}
+.changing-right-section figure img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+@media(min-width: 1000px){
+    .lists__content_row{
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+    .lists__content_row > div{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .list-content-sec{
+        margin-bottom: 70px;
+    }
+}
+@media(max-width: 1199px){
+    .client-slider .slick-slider .leftArrowSlick{
+    left: 45%;
+    top: 60px;
+}
+.client-slider .slick-slider .rightArrowSlick{
+      left: 45%;
+    top: 60px;
+    transform: translateX(60px);
+}
+}
+@media(max-width: 767px){
+    .hamspan {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #000;
+    margin-top: 2px;
+    outline: none;
+    cursor: pointer;
+}
+#header .navbar-collapse.collapse.in{
+    display: block;
+}
+.we-are-flower-title{
+    width: 320px;
+}
+h1{
+    font-size: 30px !important;
+}
+h2{
+    font-size: 24px !important;
+}
+h3{
+    font-size: 20px !important;
+}
+.advert-btn-section,
+.cannabis-ad-title,
+.advert-content-section p,
+.three-dot-section h2,
+.three-dot-content p,
+.capability-content h2,
+.capability-content p,
+.list-title,
+.list-content-sec,
+.footer-ul,
+.footer-title,
+.publisher-email-content h2{
+    text-align: center;
+}
+.three-dot-part .row > div:nth-child(1) .blue-circle-sec:after{
+    display: none;
+}
+.blue-dots-section{
+    padding-bottom: 25px;
+}
+.three-dot-section{
+    padding: 50px 0;
+}
+.three-dot-part{
+    padding-bottom: 0;
+}
+.row.capabilitiee-row > div {
+    justify-content: center;
+}
+.publisher-email-content input[type="email"]{
+    margin-bottom: 20px;
+}
+.publisher-email-content h2{
+    padding-bottom: 20px;
+}
+.publisher-email-content input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+}   
+#footer .row > div:nth-child(1) .footer-ul{
+    column-count: 1;
+}
+
+.client-slider .slick-slider .leftArrowSlick, .client-slider .slick-slider .rightArrowSlick{
+    height: 40px;
+    width: 40px;
+}
+#footer .row > div{
+    padding-top: 20px;
+}
+#footer{
+    padding: 30px 0;
+}
+.mytab_btn{
+    margin-bottom: 40px;
+}
+}
+@media(max-width: 576px){
+    .changing-right-section{
+        display: block;
+    }
+    .changing-right-section figure{
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    .changing-right-content{
+        margin: 0 auto;
+    text-align: center;
+    }
+    .changing-right-content{
+        width: unset;
+    }
+}
